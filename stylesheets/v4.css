@@ -1,0 +1,143 @@
+:root {
+    --navBar-color: #FFFFFF;
+    --background-color: #142634;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+.nav {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    position: absolute;
+    background: linear-gradient(180deg, #FBEEFF 0%, rgba(146, 128, 153, 0) 100%), #FFFFFF;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.3), inset 0px -3px 5px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-areas: 'tab1 tab2 tab3 tab4';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.tab1,
+.tab2,
+.tab3,
+.tab4 {
+    overflow: hidden;
+    fill: currentColor;
+}
+
+.center {
+    left: 40%;
+    position: relative;
+    top: 34%;
+
+}
+
+.bigger {
+    width: auto;
+    height: 35px;
+    top: 12%;
+    left: 31%;
+}
+
+.big {
+    width: auto;
+    height: 28px;
+    left: 33%;
+    top: 18%;
+}
+
+.selectedTab {
+    overflow: initial;
+}
+
+.selected{
+    background-color: var(--background-color);
+    background-color: var(--background-color);
+    top: -5px;
+    position: absolute;
+}
+
+.selected::before{
+    content: '';
+    height: 1000px;
+    width: 1000px;
+    background-color: ;
+}
+
+.selectedHome::after{
+    content: 'Home';
+    left: 21px;
+    top: 19px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.houseIcon{
+    width: 15px;
+    height: 12.5px;
+    background: var(--background-color);
+    position: absolute;
+    bottom: 22px;
+    left: 42.7px;
+    border-left: solid 2.75px var(--navBar-color);
+    border-right: solid 2.75px var(--navBar-color);
+    border-bottom: solid 2.75px var(--navBar-color);
+    border-radius: 2px 2px 4px 4px;
+}
+
+.houseIcon::before{
+    content: "";
+    border-left: solid 2.75px var(--navBar-color);
+    border-top: solid 2.75px var(--navBar-color);
+    height: 11.5px;
+    width: 11.5px;
+    display: block;
+    position: relative;
+    left: 0.5px;
+    top: -7.1px;
+    transform: rotate(45deg);
+    border-radius: 27px 13px 9pc 13px;
+}
+
+.houseIcon::after{
+    content: "";
+    height: 12px;
+    width: 6.5px;
+    display: block;
+    position: relative;
+    background-color: var(--navBar-color);
+    left: 4px;
+    bottom: 11px;
+    border-radius: 5px 5px 0 0;
+}
+
+.selectCircle{
+    background-color: var(--background-color);
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -17px;
+    left: 35px;
+    border-radius: 29px;
+}
+
+.portfolioIcon{
+    background-color: var(--navBar-color);
+    width: 21px;
+    height: 16px;
+    position: relative;
+    left: 35%;
+    bottom: -27%;
+    border: 2.7px solid var(--background-color);
+    border-radius: 4px;
+    display: inherit;
+}
