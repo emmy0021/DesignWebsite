@@ -39,7 +39,31 @@ body {
     fill: currentColor;
 }
 
+.houseIcon{
+    transition: top .6s !important;
+    width: 15px;
+    height: 12.5px;
+    position: absolute;
+    bottom: 29px;
+    left: 42.7px;
+    border-left: solid 2.75px var(--house-border-color);
+    border-right: solid 2.75px var(--house-border-color);
+    border-bottom: solid 2.75px var(--house-border-color);
+    border-radius: 2px 2px 4px 4px;
+    
 
+}
+.portfolioIcon{
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    left: 34.4%;
+    bottom: 34%;
+    border: 2.7px solid var(--portfolio-border-color);
+    border-radius: 4px;
+    transition: top .6s !important;
+
+}
 .profileIcon{
     width: 28px;
     height: 28px;
@@ -54,16 +78,31 @@ body {
 
 
 }
+.mailIcon{
+    width: 27px;
+    height: 20px;
+    position: absolute;
+    box-sizing: border-box;
+    border: solid 2.7px var(--mail-border-color);
+    border-radius: 3px;
+    left: 81.5%;
+    bottom: 25.5px;
+    transition: top .6s;
+
+}
+
+
 
 
 .homeSelected{
-    top: -5px;
     position: absolute;
+    top: -5px;
+    
 }
 
 .portfolioSelected{
-    position: absolute !important;
-    top: -10px !important;
+    position: absolute;
+    top: -10px ;
 }
 
 .profileSelected{
@@ -76,7 +115,7 @@ body {
     top: -11px;
 }
 
-.selectedHome::after{
+.homeLabel::after{
     content: 'Home';
     left: 21px;
     top: 19px;
@@ -85,19 +124,34 @@ body {
     font-weight: 700;
 }
 
-.houseIcon{
-    width: 15px;
-    height: 12.5px;
-    position: absolute;
-    bottom: 29px;
-    left: 42.7px;
-    border-left: solid 2.75px var(--house-border-color);
-    border-right: solid 2.75px var(--house-border-color);
-    border-bottom: solid 2.75px var(--house-border-color);
-    border-radius: 2px 2px 4px 4px;
-    transition: top .6s;
-
+.portfolioLabel::after{
+    content: 'Portfolio';
+    left: 17px;
+    top: 19px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
+
+.profileLabel::after{
+    content: 'Profile';
+    left: 24px;
+    top: 19px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.mailLabel::after{
+    content: 'Contact';
+    left: 8px;
+    top: 19px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+
 
 .houseIcon::before{
     content: "";
@@ -152,18 +206,7 @@ body {
     left: 80%
 }
 
-.portfolioIcon{
-    width: 21px;
-    height: 16px;
-    position: absolute;
-    left: 34.4%;
-    bottom: 34%;
-    border: 2.7px solid var(--portfolio-border-color);
-    border-radius: 4px;
-    display: inherit;
-    transition: top .6s;
 
-}
 
 .portfolioIcon::before{
     content: '';
@@ -202,18 +245,7 @@ body {
     border-radius: 11px;
 }
 
-.mailIcon{
-    width: 27px;
-    height: 20px;
-    position: absolute;
-    box-sizing: border-box;
-    border: solid 2.7px var(--mail-border-color);
-    border-radius: 3px;
-    left: 81.5%;
-    bottom: 25.5px;
-    transition: top .6s;
 
-}
 
 .mailIcon::before{
     content: '';

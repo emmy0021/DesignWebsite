@@ -12,6 +12,7 @@ function homeF(e) {
     selector.className = "selectCircle";
     pick('house');
     home.className = 'houseIcon homeSelected';
+    tabs[1].className = 'tab1 homeLabel';
 }
 
 
@@ -20,6 +21,7 @@ function pfolio(e) {
     selector.className = "selectCircle Setpfolio";
     pick('portfolio');
     portfolio.className = 'portfolioIcon portfolioSelected';
+    tabs[2].className = 'tab2 portfolioLabel';
 
 }
 
@@ -28,6 +30,7 @@ function aboutMe(e) {
     selector.className = "selectCircle Setpfile";
     pick('profile');
     profile.className = 'profileIcon profileSelected';
+    tabs[3].className = 'tab3 profileLabel';
 }
 
 function contactMe(e) {
@@ -35,6 +38,7 @@ function contactMe(e) {
     selector.className = "selectCircle Setemail";
     pick('mail');
     mail.className = 'mailIcon mailSelected';
+    tabs[4].className = 'tab4 mailLabel';
 }
 
 
@@ -44,6 +48,7 @@ function pick(name, color = "#FFFFFF") { //for buttons
     let fName = '--' + name + '-border-color';
     document.documentElement.style.setProperty(fName, color);
     moveButtonsDown();
+    removeLabels();
 
 }
 
@@ -67,4 +72,13 @@ function moveButtonsDown() {
     profile.className = 'profileIcon';
     mail.className = 'mailIcon';
 
+}
+
+tabs = document.getElementsByClassName('nav')[0].children;
+
+function removeLabels() {
+    console.log(tabs);
+    for (var i = 1; i<tabs.length; i++) {
+        tabs[i].className = 'tab'+i;
+    }
 }
