@@ -1,6 +1,18 @@
 :root {
     --navBar-color: #FFFFFF;
     --background-color: #142634;
+
+    --house-border-color: #FFFFFF; /*FFFFFF*/
+    --house-background-color: #142634;/*142634*/
+
+    --portfolio-border-color: #142634;
+    --portfolio-background-color: #FFFFFF;
+
+    --profile-border-color: #142634;
+    --profile-background-color: #FFFFFF;
+
+    --mail-border-color: #142634;
+    --mail-background-color: #FFFFFF;
 }
 
 body {
@@ -59,17 +71,8 @@ body {
 }
 
 .selected{
-    background-color: var(--background-color);
-    background-color: var(--background-color);
     top: -5px;
     position: absolute;
-}
-
-.selected::before{
-    content: '';
-    height: 1000px;
-    width: 1000px;
-    background-color: ;
 }
 
 .selectedHome::after{
@@ -84,20 +87,20 @@ body {
 .houseIcon{
     width: 15px;
     height: 12.5px;
-    background: var(--background-color);
+    background: var(--house-background-color);
     position: absolute;
-    bottom: 22px;
+    bottom: 29px;
     left: 42.7px;
-    border-left: solid 2.75px var(--navBar-color);
-    border-right: solid 2.75px var(--navBar-color);
-    border-bottom: solid 2.75px var(--navBar-color);
+    border-left: solid 2.75px var(--house-border-color);
+    border-right: solid 2.75px var(--house-border-color);
+    border-bottom: solid 2.75px var(--house-border-color);
     border-radius: 2px 2px 4px 4px;
 }
 
 .houseIcon::before{
     content: "";
-    border-left: solid 2.75px var(--navBar-color);
-    border-top: solid 2.75px var(--navBar-color);
+    border-left: solid 2.75px var(--house-border-color);
+    border-top: solid 2.75px var(--house-border-color);
     height: 11.5px;
     width: 11.5px;
     display: block;
@@ -114,7 +117,7 @@ body {
     width: 6.5px;
     display: block;
     position: relative;
-    background-color: var(--navBar-color);
+    background-color: var(--house-border-color);
     left: 4px;
     bottom: 11px;
     border-radius: 5px 5px 0 0;
@@ -131,13 +134,100 @@ body {
 }
 
 .portfolioIcon{
-    background-color: var(--navBar-color);
+    background-color: var(--portfolio-background-color);
     width: 21px;
     height: 16px;
     position: relative;
     left: 35%;
     bottom: -27%;
-    border: 2.7px solid var(--background-color);
+    border: 2.7px solid var(--portfolio-border-color);
     border-radius: 4px;
     display: inherit;
+}
+
+.portfolioIcon::before{
+    content: '';
+    width: 10px;
+    position: relative;
+    height: 1px;
+    background-color: var(--portfolio-background-color);
+    border: 2.7px solid var(--portfolio-border-color);
+    display: inherit;
+    left: 3px;
+    top: -7px;
+    border-radius: 4px 4px 0 0;
+}
+
+.profile{
+    width: 28px;
+    height: 28px;
+    border: 2px solid var(--profile-border-color);
+    box-sizing: border-box;
+    border-radius: 23px;
+    overflow: hidden;
+
+
+    left: 35%;
+    position: relative;
+    top: 7px;
+
+}
+
+.profileBody{
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px solid var(--profile-border-color);
+    position: relative;
+    left: -3px;
+    bottom: -14.5px;
+    border-radius: 33px;
+}
+
+.profileBody::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    display: inherit;
+    border: solid 2px var(--profile-border-color);
+    top: -14px;
+    left: 8px;
+    position: relative;
+    border-radius: 11px;
+}
+
+.mailIcon{
+    width: 27px;
+    height: 20px;
+    position: relative;
+    box-sizing: border-box;
+    border: solid 2.7px var(--mail-border-color);
+    border-radius: 3px;
+    left: 28px;
+    bottom: -13.5px;
+
+}
+
+.mailIcon::before{
+    content: '';
+    width: 16px;
+    height: 3px;
+    background: var(--mail-border-color);
+    position: absolute;
+    transform: rotate(45deg);
+    left: -2px;
+    top: 3px;
+    border-radius: 0 0 10px 0;
+}
+
+.mailIcon::after{
+    content: '';
+    width: 16px;
+    height: 3px;
+    background: var(--mail-border-color);
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 8px;
+    top: 3px;
+    border-radius: 0 0 0 10px;
 }
