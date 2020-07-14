@@ -3,7 +3,6 @@
     --background-color: #142634;
 
     --house-border-color: #FFFFFF; /*FFFFFF*/
-
     --portfolio-border-color: #142634;
     --profile-border-color: #142634;
     --mail-border-color: #142634;
@@ -29,6 +28,7 @@ body {
     padding: 10px;
 
     font-family: 'Roboto', sans-serif;
+    
 }
 
 .tab1,
@@ -39,34 +39,41 @@ body {
     fill: currentColor;
 }
 
-.center {
-    left: 40%;
-    position: relative;
-    top: 34%;
 
-}
-
-.bigger {
-    width: auto;
-    height: 35px;
-    top: 12%;
-    left: 31%;
-}
-
-.big {
-    width: auto;
+.profileIcon{
+    width: 28px;
     height: 28px;
-    left: 33%;
-    top: 18%;
+    border: 2px solid var(--profile-border-color);
+    box-sizing: border-box;
+    border-radius: 23px;
+    overflow: hidden;
+    left: 59%;
+    position: absolute;
+    top: 20px;
+    transition: top .6s;
+
+
 }
 
-.selectedTab {
-    overflow: initial;
-}
 
-.selected{
+.homeSelected{
     top: -5px;
     position: absolute;
+}
+
+.portfolioSelected{
+    position: absolute !important;
+    top: -10px !important;
+}
+
+.profileSelected{
+    position: absolute;
+    top: -13px;
+}
+
+.mailSelected{
+    position: absolute;
+    top: -11px;
 }
 
 .selectedHome::after{
@@ -88,6 +95,8 @@ body {
     border-right: solid 2.75px var(--house-border-color);
     border-bottom: solid 2.75px var(--house-border-color);
     border-radius: 2px 2px 4px 4px;
+    transition: top .6s;
+
 }
 
 .houseIcon::before{
@@ -118,11 +127,11 @@ body {
 
 .selectCircle{
     background-color: var(--background-color);
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: -17px;
-    left: 35px;
+    top: -19px;
+    left: 33px;
     border-radius: 29px;
     transition: left .6s;
 }
@@ -132,26 +141,28 @@ body {
 }
 
 .Setpfolio{
-    left: 33.5%;
+    left: 32.8%;
 }
 
 .Setpfile{
-    left: 58%
+    left: 57.6%;
 }
 
 .Setemail{
-    left: 81.5%
+    left: 80%
 }
 
 .portfolioIcon{
     width: 21px;
     height: 16px;
-    position: relative;
-    left: 35%;
-    bottom: -27%;
+    position: absolute;
+    left: 34.4%;
+    bottom: 34%;
     border: 2.7px solid var(--portfolio-border-color);
     border-radius: 4px;
     display: inherit;
+    transition: top .6s;
+
 }
 
 .portfolioIcon::before{
@@ -166,20 +177,7 @@ body {
     border-radius: 4px 4px 0 0;
 }
 
-.profile{
-    width: 28px;
-    height: 28px;
-    border: 2px solid var(--profile-border-color);
-    box-sizing: border-box;
-    border-radius: 23px;
-    overflow: hidden;
 
-
-    left: 35%;
-    position: relative;
-    top: 7px;
-
-}
 
 .profileBody{
     width: 30px;
@@ -207,12 +205,13 @@ body {
 .mailIcon{
     width: 27px;
     height: 20px;
-    position: relative;
+    position: absolute;
     box-sizing: border-box;
     border: solid 2.7px var(--mail-border-color);
     border-radius: 3px;
-    left: 28px;
-    bottom: -13.5px;
+    left: 81.5%;
+    bottom: 25.5px;
+    transition: top .6s;
 
 }
 
