@@ -3,16 +3,10 @@
     --background-color: #142634;
 
     --house-border-color: #FFFFFF; /*FFFFFF*/
-    --house-background-color: #142634;/*142634*/
 
     --portfolio-border-color: #142634;
-    --portfolio-background-color: #FFFFFF;
-
     --profile-border-color: #142634;
-    --profile-background-color: #FFFFFF;
-
     --mail-border-color: #142634;
-    --mail-background-color: #FFFFFF;
 }
 
 body {
@@ -87,7 +81,6 @@ body {
 .houseIcon{
     width: 15px;
     height: 12.5px;
-    background: var(--house-background-color);
     position: absolute;
     bottom: 29px;
     left: 42.7px;
@@ -131,10 +124,26 @@ body {
     top: -17px;
     left: 35px;
     border-radius: 29px;
+    transition: left .6s;
+}
+
+.Sethome{
+    left: 35px;
+}
+
+.Setpfolio{
+    left: 33.5%;
+}
+
+.Setpfile{
+    left: 58%
+}
+
+.Setemail{
+    left: 81.5%
 }
 
 .portfolioIcon{
-    background-color: var(--portfolio-background-color);
     width: 21px;
     height: 16px;
     position: relative;
@@ -150,7 +159,6 @@ body {
     width: 10px;
     position: relative;
     height: 1px;
-    background-color: var(--portfolio-background-color);
     border: 2.7px solid var(--portfolio-border-color);
     display: inherit;
     left: 3px;
