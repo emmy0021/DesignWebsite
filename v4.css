@@ -16,6 +16,7 @@
 body {
     margin: 0;
     background-color: var(--background-color);
+    overflow: hidden;
 }
 
 
@@ -318,6 +319,13 @@ body {
     font-size: 27px;
 }
 
+.view{
+    color: var(--alt-text-color) !important;
+    position: relative !important;
+    left: 25px !important;
+    
+}
+
 
 
 .portfolio h2{
@@ -332,6 +340,8 @@ body {
 
 }
 
+
+
 .portfolio{
     bottom: -92px;
     left: 0;
@@ -340,9 +350,7 @@ body {
     position: relative;
 }
 
-.view{
-    color: var(--alt-text-color) !important;
-}
+
 
 
 .view::before{
@@ -373,7 +381,6 @@ body {
     bottom: -21px;
     height: 230px;
     width: auto;
-    margin-left: 28px;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -388,4 +395,15 @@ body {
     display: inline-block;
     margin-right: 10px;
     border-radius: 19px;
+}
+
+.item:first-child{
+    margin-left: 28px;
+}
+
+.mainImg{
+    position: absolute;
+    left: 49%;
+    top: 45px;
+    width: 49%;
 }
