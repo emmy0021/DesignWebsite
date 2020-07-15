@@ -279,47 +279,61 @@ body {
     top: 3px;
     border-radius: 0 0 0 10px;
 }
+.mainText{
+
+}
 
 .mainText h1 {
     position: relative;
     width: 193px;
     height: 122px;
     left: 28px;
-    top: 53px;
-
+    top: 67px;
     font-family: 'Tajawal', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 35px;
-    line-height: 36px;
-
+    font-size: 44px;
+    line-height: 55px;
     color: #FFFFFF;
 }
 
-.mainText h2, .portfolio h2{
+.mainText h2,.portfolio h2{
     position: relative;
     width: auto;
     height: 23px;
     left: 28px;
-    top: 28px;
     font-family: Tajawal;
-    font-style: normal;
     font-weight: 500;
-    font-size: 19px;
-    line-height: 23px;
     color: var(--gray-color);
+
 }
+
+.portfolio h2{
+    top: 28px;
+    font-size: 19px;
+}
+
+.mainText h2{
+    top: 83px;
+    font-size: 27px;
+}
+
+
 
 .portfolio h2{
     top: 16px;
     font-weight: 700;
+    font-size: 22px;
     color: #FFFCFC;
-    display: inline;
-    padding-right: 48px;
+    display: inline;}
+
+.portfolio h2:first-child{
+    padding-right: 79px;
+
 }
 
 .portfolio{
-    bottom: -19px;
+    bottom: -92px;
     left: 0;
     right: 0;
     height: 36vh;
@@ -338,8 +352,8 @@ body {
     border-right: solid 2.5px var(--alt-text-color);
     height: 8px;
     position: absolute;
-    left: 121px;
-    top: 35%;
+    left: 139px;
+    top: 37%;
     transform: rotate(45deg);
 }
 
@@ -349,7 +363,7 @@ body {
     background-color: var(--alt-text-color);
     height: 2.5px;
     position: absolute;
-    left: 116px;
+    left: 131px;
     top: 50%;
     transform: rotate(180deg);
 }
@@ -357,10 +371,9 @@ body {
 .items{
     position: relative;
     bottom: -21px;
-    height: 142px;
+    height: 230px;
     width: auto;
     margin-left: 28px;
-
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -370,7 +383,7 @@ body {
 
 .item{
     height: 100%;
-    width: 98px;
+    width: 143px;
     background-color: var(--gray-color);
     display: inline-block;
     margin-right: 10px;
