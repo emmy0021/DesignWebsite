@@ -281,7 +281,8 @@ body {
     border-radius: 0 0 0 10px;
 }
 .mainText{
-
+    top: -6px;
+    position: relative;
 }
 
 .mainText h1 {
@@ -316,7 +317,7 @@ body {
 
 .mainText h2{
     top: 88px;
-    font-size: 28px;
+    font-size: 26.5px;
 }
 
 .view{
@@ -341,7 +342,7 @@ body {
 }
 
 .portfolio{
-    bottom: -98px;
+    bottom: -85px;
     left: 0;
     right: 0;
     height: 36vh;
@@ -359,7 +360,7 @@ body {
     height: 8px;
     position: absolute;
     left: 153px;
-    top: 37%;
+    top: 13px;
     transform: rotate(45deg);
 }
 
@@ -370,7 +371,7 @@ body {
     height: 2.5px;
     position: absolute;
     left: 147px;
-    top: 48%;
+    top: 17px;
     transform: rotate(180deg);
 }
 
@@ -402,6 +403,33 @@ body {
 .mainImg{
     position: absolute;
     left: 49%;
-    top: 45px;
+    top: 21px;
     width: 49%;
+}
+
+.category{
+    position: fixed;
+    color: #FFFFFF;
+    left: 28px;
+    top: 22px;
+    border-radius: 8px;
+    border: #FFFFFF solid 2px;
+    padding: 9px 36px 9px 12px;
+    font-family: Tajawal;
+    font-weight: 700;
+    z-index: 2;
+    font-size: 22px;
+}
+
+.category::after{
+    position: absolute;
+    content: '';
+    border-bottom: solid #FFFFFF 2px;
+    border-left: solid #FFFFFF 2px;
+    width: 10px;
+    height: 10px;
+    right: 13px;
+    top: 17px;
+    transform: rotate(-45deg);
+    border-radius: 0 0 0 2px;
 }
