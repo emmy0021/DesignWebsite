@@ -4,6 +4,9 @@ var portfolio = document.getElementById('portfolioIcon');
 var profile = document.getElementById('profileIcon');
 var mail = document.getElementById('mailIcon');
 var profileDiv = document.getElementById("profile");
+var contactDiv = document.getElementById("contact");
+
+
 
 
 buttons = [home, portfolio, profile, mail];
@@ -15,6 +18,7 @@ function homeF(e) {
     home.className = 'houseIcon homeSelected';
     tabs[1].className = 'tab1 homeLabel';
     profileDiv.style.visibility = "hidden";
+    contactDiv.style.visibility = "hidden";
 }
 
 
@@ -25,6 +29,8 @@ function pfolio(e) {
     portfolio.className = 'portfolioIcon portfolioSelected';
     tabs[2].className = 'tab2 portfolioLabel';
     profileDiv.style.visibility = "hidden";
+    contactDiv.style.visibility = "hidden";
+
 
 
 }
@@ -36,6 +42,8 @@ function aboutMe(e) {
     profile.className = 'profileIcon profileSelected';
     tabs[3].className = 'tab3 profileLabel';
     profileDiv.style.visibility = "visible";
+    contactDiv.style.visibility = "hidden";
+
 
 }
 
@@ -46,6 +54,8 @@ function contactMe(e) {
     mail.className = 'mailIcon mailSelected';
     tabs[4].className = 'tab4 mailLabel';
     profileDiv.style.visibility = "hidden";
+    contactDiv.style.visibility = "visible";
+
 
 
 }
