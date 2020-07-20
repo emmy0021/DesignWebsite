@@ -3,6 +3,7 @@ var home = document.getElementById('houseIcon');
 var portfolio = document.getElementById('portfolioIcon');
 var profile = document.getElementById('profileIcon');
 var mail = document.getElementById('mailIcon');
+var profileDiv = document.getElementById("profile");
 
 
 buttons = [home, portfolio, profile, mail];
@@ -13,6 +14,7 @@ function homeF(e) {
     pick('house');
     home.className = 'houseIcon homeSelected';
     tabs[1].className = 'tab1 homeLabel';
+    profileDiv.style.visibility = "hidden";
 }
 
 
@@ -22,6 +24,8 @@ function pfolio(e) {
     pick('portfolio');
     portfolio.className = 'portfolioIcon portfolioSelected';
     tabs[2].className = 'tab2 portfolioLabel';
+    profileDiv.style.visibility = "hidden";
+
 
 }
 
@@ -31,6 +35,8 @@ function aboutMe(e) {
     pick('profile');
     profile.className = 'profileIcon profileSelected';
     tabs[3].className = 'tab3 profileLabel';
+    profileDiv.style.visibility = "visible";
+
 }
 
 function contactMe(e) {
@@ -39,6 +45,9 @@ function contactMe(e) {
     pick('mail');
     mail.className = 'mailIcon mailSelected';
     tabs[4].className = 'tab4 mailLabel';
+    profileDiv.style.visibility = "hidden";
+
+
 }
 
 
@@ -82,3 +91,14 @@ function removeLabels() {
         tabs[i].className = 'tab'+i;
     }
 }
+
+document.getElementById("view").addEventListener('click', function(){
+    pfolio();
+});
+
+
+
+document.getElementById("portfolioLabel").addEventListener('click', function(){
+    pfolio();
+});
+

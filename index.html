@@ -21,8 +21,8 @@
     </div>
 
     <div class="portfolio">
-        <h2>Portfolio</h2>
-        <h2 class="view">View all work</h2>
+        <h2 id="portfolioLabel">Portfolio</h2>
+        <h2 class="view" id="view">View all work</h2>
 
 
         <div class="items">
@@ -46,7 +46,7 @@
             <div class="portfolioIcon" id="portfolioIcon"></div>
         </div>
 
-        <div class="tab3" onclick="aboutMe()">
+        <div class="tab3" id="aboutMe" onclick="aboutMe()">
             <div class="profileIcon" id="profileIcon">
                 <div class="profileBody"></div>
             </div>
@@ -57,11 +57,24 @@
         </div>
 
     </div>
+
+    <div class="profile" id="profile">
+        <div class="info">
+            <img src="./public/me.jpg" alt="" class="profilePic">
+            <h1>Emmanuel Oyervides</h1>
+            <h2 class="profileCity">El Paso, Texas</h2>
+
+            <h2 class="profileDescription">Website Designer | Full Stack Developer <br> Email: emmy0021@gmail.com</h2>
+
+        </div>
+        <div class="skills"></div>
+        <div class="links"></div>
+
+    </div>
+
+
+
     <script src='v4.js'></script>
-
-
-
-
 </body>
 
 </html>
