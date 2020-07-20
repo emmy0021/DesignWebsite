@@ -2,7 +2,8 @@
     --navBar-color: #FFFFFF;
     --background-color: #142634;
 
-    --house-border-color: #FFFFFF;/*FFFFFF*/
+    --house-border-color: #FFFFFF;
+    /*FFFFFF*/
     --portfolio-border-color: #142634;
     --profile-border-color: #142634;
     --mail-border-color: #142634;
@@ -282,7 +283,8 @@ body {
     top: 3px;
     border-radius: 0 0 0 10px;
 }
-.mainText{
+
+.mainText {
     top: 4px;
     position: relative;
 }
@@ -301,7 +303,8 @@ body {
     color: var(--text-color);
 }
 
-.mainText h2,.portfolio h2{
+.mainText h2,
+.portfolio h2 {
     position: relative;
     width: auto;
     height: 23px;
@@ -312,39 +315,40 @@ body {
 
 }
 
-.portfolio h2{
+.portfolio h2 {
     top: 28px;
     font-size: 19px;
 }
 
-.mainText h2{
+.mainText h2 {
     top: 88px;
     font-size: 26px;
 }
 
-.view{
+.view {
     color: var(--alt-text-color) !important;
     position: relative !important;
     left: 25px !important;
-    
+
 }
 
 
 
 
-.portfolio h2{
+.portfolio h2 {
     top: 16px;
     font-weight: 700;
     font-size: 25px;
     color: #FFFCFC;
-    display: inline;}
+    display: inline;
+}
 
-.portfolio h2:first-child{
+.portfolio h2:first-child {
     padding-right: 25%;
 
 }
 
-.portfolio{
+.portfolio {
     bottom: -110px;
     left: 0;
     right: 0;
@@ -355,7 +359,7 @@ body {
 
 
 
-.view::before{
+.view::before {
     content: '';
     width: 8px;
     border-top: solid 2.5px var(--alt-text-color);
@@ -367,7 +371,7 @@ body {
     transform: rotate(45deg);
 }
 
-.view::after{
+.view::after {
     content: '';
     width: 16px;
     background-color: var(--alt-text-color);
@@ -378,7 +382,7 @@ body {
     transform: rotate(180deg);
 }
 
-.items{
+.items {
     position: relative;
     bottom: -21px;
     height: auto;
@@ -389,7 +393,7 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-.item{
+.item {
     height: 230px;
     width: 288px;
     background-color: var(--gray-color);
@@ -402,18 +406,18 @@ body {
 
 }
 
-.item:first-child{
+.item:first-child {
     margin-left: 28px;
 }
 
-.mainImg{
+.mainImg {
     position: absolute;
     left: 49%;
     top: 21px;
     width: 49%;
 }
 
-.category{
+.category {
     position: fixed;
     color: var(--text-color);
     left: 28px;
@@ -427,7 +431,7 @@ body {
     font-size: 22px;
 }
 
-.category::after{
+.category::after {
     position: absolute;
     content: '';
     border-bottom: solid var(--text-color) 2px;
@@ -440,44 +444,69 @@ body {
     border-radius: 0 0 0 2px;
 }
 
-.profile{
+.profile {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     left: 0;
     top: 0;
     right: 0;
     bottom: 50px;
     background-color: var(--background-color);
 
-    visibility: hidden;
-    
+    /*visibility: hidden;*/
+
 }
 
-.profilePic{
+.profilePic {
     width: 45%;
     border-radius: 128px;
     position: relative;
 }
 
-.info{
-    padding-top: 8%;
+.info {
+    padding-top: 24%;
     text-align: center;
 }
 
-.info h1, .info h2{
+.info h1,
+.info h2 {
     color: var(--text-color);
     font-family: 'Tajawal', sans-serif;
 }
 
-.info h1{
+.info h1 {
     margin-bottom: 0;
 }
 
-.profileCity{
+.profileCity {
     color: var(--gray-color) !important;
-    margin-top: -9px;
+    margin-top: -4px;
+    font-weight: 500;
 }
 
-.profileDescription{
+.profileDescription {
     font-size: 20px;
+    margin-top: -8px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.skills {
+    font-family: 'Tajawal', sans-serif;
+    padding: 4px 28px 28px 28px;
+}
+
+.skillsLabel {
+    color: var(--gray-color);
+    margin-top: 8px;
+}
+
+.skill {
+    color: var(--text-color);
+    padding: 4px 12px 4px 12px;
+    border: solid 1px var(--text-color);
+    border-radius: 6px;
+    margin-right: 4px;
+    display: inline-flex;
+    margin-bottom: 12px;
 }
