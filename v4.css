@@ -47,7 +47,7 @@ body {
 }
 
 .houseIcon {
-    transition: top .6s !important;
+    transition: top .6s;
     width: 15px;
     height: 12.5px;
     position: absolute;
@@ -70,8 +70,8 @@ body {
     bottom: 34%;
     border: 2.7px solid var(--portfolio-border-color);
     border-radius: 4px;
-    transition: top .6s !important;
-
+    transition: top .6s;
+    top: 25.5px;
 }
 
 .profileIcon {
@@ -99,7 +99,7 @@ body {
     left: 81.5%;
     bottom: 25.5px;
     transition: top .6s;
-
+    top: 24.5px;
 }
 
 
@@ -330,6 +330,7 @@ body {
 
 
 
+
 .portfolio h2{
     top: 16px;
     font-weight: 700;
@@ -385,16 +386,19 @@ body {
     overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-
 }
 
 .item{
     height: 230px;
-    width: 143px;
+    width: 288px;
     background-color: var(--gray-color);
     display: inline-block;
     margin-right: 10px;
     border-radius: 19px;
+    background-image: url(./public/DelPaso.jpg);
+    background-repeat: no-repeat;
+    background-size: 289px;
+
 }
 
 .item:first-child{
