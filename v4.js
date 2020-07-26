@@ -5,8 +5,20 @@ var profile = document.getElementById('profileIcon');
 var mail = document.getElementById('mailIcon');
 var profileDiv = document.getElementById("profile");
 var contactDiv = document.getElementById("contact");
+var items = document.getElementById("items");
 
+var arrItems = document.getElementsByClassName("item");
 
+var images = ['./public/DelPaso.jpg', './public/GoldenRamen.jpg'];
+
+for (var i = 0; i < images.length; i++) { //add images to home porfolio
+    let div = document.createElement('div');
+    div.className = 'item';
+    div.id = i;
+    div.style.backgroundImage = 'url(' + images[i] + ')';
+
+    items.appendChild(div);
+}
 
 
 buttons = [home, portfolio, profile, mail];
@@ -96,19 +108,29 @@ function moveButtonsDown() {
 tabs = document.getElementsByClassName('nav')[0].children;
 
 function removeLabels() {
-    console.log(tabs);
-    for (var i = 1; i<tabs.length; i++) {
-        tabs[i].className = 'tab'+i;
+
+    for (var i = 1; i < tabs.length; i++) {
+        tabs[i].className = 'tab' + i;
     }
 }
 
-document.getElementById("view").addEventListener('click', function(){
+document.getElementById("view").addEventListener('click', function () {
     pfolio();
 });
 
 
 
-document.getElementById("portfolioLabel").addEventListener('click', function(){
+document.getElementById("portfolioLabel").addEventListener('click', function () {
     pfolio();
 });
 
+
+
+
+
+window.onclick = e => {
+    if(e.target.className === 'item'){
+        let id = e.target.id;
+        console.log(id);
+    } 
+}

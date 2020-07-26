@@ -398,7 +398,7 @@ body {
     width: 288px;
     background-color: var(--gray-color);
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 14px;
     border-radius: 19px;
     background-image: url(./public/DelPaso.jpg);
     background-repeat: no-repeat;
