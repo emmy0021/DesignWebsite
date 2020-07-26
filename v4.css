@@ -444,7 +444,7 @@ body {
     border-radius: 0 0 0 2px;
 }
 
-.profile, .contact{
+.profile, .contact, .portfolioTab{
     position: absolute;
     z-index: 1;
     left: 0;
@@ -564,3 +564,41 @@ textarea{
     height: 40px;
 
 }
+
+.portfolioTab{
+    visibility: hidden;
+}
+
+.topNav{
+    left: 0;
+    right: 0;
+    height: 88px;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.links{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    margin: 0;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 43px;
+  }
+
+.fa-github,.fa-linkedin {
+    color: var(--text-color);
+    position: relative;
+    top: 5px;
+    left: 67px;
+  }
