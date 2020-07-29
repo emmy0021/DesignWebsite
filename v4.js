@@ -133,7 +133,7 @@ window.onclick = e => {
         openPreview(e);
     } 
 }
-window.ontouchstart = e => {
+window.ontouchend = e => {
     if(e.target.className === 'item'){
         openPreview(e);
     } 
