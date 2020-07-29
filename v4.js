@@ -31,6 +31,9 @@ function homeF(e) {
     tabs[1].className = 'tab1 homeLabel';
     profileDiv.style.visibility = "hidden";
     contactDiv.style.visibility = "hidden";
+
+    document.getElementById('preview').style.visibility = 'hidden';
+
 }
 
 
@@ -43,6 +46,7 @@ function pfolio(e) {
     profileDiv.style.visibility = "hidden";
     contactDiv.style.visibility = "hidden";
 
+    document.getElementById('preview').style.visibility = 'hidden';
 
 
 }
@@ -56,6 +60,8 @@ function aboutMe(e) {
     profileDiv.style.visibility = "visible";
     contactDiv.style.visibility = "hidden";
 
+    document.getElementById('preview').style.visibility = 'hidden';
+
 
 }
 
@@ -68,6 +74,7 @@ function contactMe(e) {
     profileDiv.style.visibility = "hidden";
     contactDiv.style.visibility = "visible";
 
+    document.getElementById('preview').style.visibility = 'hidden';
 
 
 }
