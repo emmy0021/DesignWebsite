@@ -140,11 +140,18 @@ window.onclick = e => {
         openPreview(e);
     } 
 }
-window.ontouchend = e => {
-    if(e.target.className === 'item'){
+
+
+var touchmoved;
+$('div').on('touchend', function(e){
+    if(e.currentTarget.className === "item" && touchmoved != true){
         openPreview(e);
-    } 
-}
+    }
+}).on('touchmove', function(e){
+    touchmoved = true;
+}).on('touchstart', function(){
+    touchmoved = false;
+});
 
 
 function openPreview(e){
