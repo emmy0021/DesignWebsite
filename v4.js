@@ -130,13 +130,23 @@ document.getElementById("portfolioLabel").addEventListener('click', function () 
 
 window.onclick = e => {
     if(e.target.className === 'item'){
-        let url = e.target.style.backgroundImage;
-        url = url.substring(5,url.length-2);
-        console.log(url);
-
-        document.getElementById('preview').style.visibility = 'visible';
-        document.getElementById('previewImg').src = url;
+        openPreview(e);
     } 
+}
+window.ontouchstart = e => {
+    if(e.target.className === 'item'){
+        openPreview(e);
+    } 
+}
+
+
+function openPreview(e){
+    let url = e.target.style.backgroundImage;
+    url = url.substring(5,url.length-2);
+    console.log(url);
+
+    document.getElementById('preview').style.visibility = 'visible';
+    document.getElementById('previewImg').src = url;
 }
 
 document.getElementById("exitPreview").addEventListener('click',function(){
