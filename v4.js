@@ -9,13 +9,13 @@ var items = document.getElementById("items");
 
 var arrItems = document.getElementsByClassName("item");
 
-var images = ['./public/DelPaso.jpg', './public/GoldenRamen.jpg'];
+var images = ['DelPaso.jpg', 'GoldenRamen.jpg'];
 
 for (var i = 0; i < images.length; i++) { //add images to home porfolio
     let div = document.createElement('div');
     div.className = 'item';
     div.id = i;
-    div.style.backgroundImage = 'url(' + images[i] + ')';
+    div.style.backgroundImage = 'url(./public/' + images[i] + ')';
 
     items.appendChild(div);
 }
@@ -130,7 +130,15 @@ document.getElementById("portfolioLabel").addEventListener('click', function () 
 
 window.onclick = e => {
     if(e.target.className === 'item'){
-        let id = e.target.id;
-        console.log(id);
+        let url = e.target.style.backgroundImage;
+        url = url.substring(5,url.length-2);
+        console.log(url);
+
+        document.getElementById('preview').style.visibility = 'visible';
+        document.getElementById('previewImg').src = url;
     } 
 }
+
+document.getElementById("exitPreview").addEventListener('click',function(){
+    document.getElementById('preview').style.visibility = 'hidden';
+});
